@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Magazyn</title>
+  <link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth boot">
+  <div id="bg" aria-hidden="true"></div>
+  <header id="header" hidden>
+    <h1><a class="logo-link" href="#/stock" title="Stany"><img class="logo" src="logo-trim.png" alt="Magazyn"></a></h1>
+    <nav id="nav"></nav>
+    <div id="userbox"></div>
+  </header>
+  <div id="message" role="status" hidden></div>
+  <section id="auth"></section>
+  <main id="view"></main>
+  <footer id="statusbar">
+    <span id="status-text">Gotowe</span>
+    <span id="status-progress" hidden><i></i></span>
+    <span id="status-filter" class="panel" hidden></span>
+    <span id="status-stats" class="group"></span>
+    <span id="status-low" class="panel"></span>
+    <span id="status-cart" class="panel"></span>
+    <span id="status-last" class="panel"></span>
+    <span id="status-conn" class="panel">● Połączono</span>
+    <span id="status-user" class="panel">Niezalogowany</span>
+    <span id="status-clock" class="panel"></span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
